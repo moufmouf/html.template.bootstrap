@@ -39,7 +39,9 @@
 				</div>
 			</div>
 		{% endif %}
-		{{ toHtml(this.header) }}
+		{% if this.header %}
+			{{ toHtml(this.header) }}
+		{% endif %}
 
 		<div class="{{ containerClass }}">
 			<div class="row">
